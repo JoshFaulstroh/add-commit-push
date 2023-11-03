@@ -1,25 +1,20 @@
 import os
 import sys
+import time
 
-print("Add Commit Push Starting...") 
+print("Starting.")
+time.sleep(0.5) 
 numOfArgs = len(sys.argv)
 print("Total Arguments Passed:", numOfArgs)
 message = "Default commit"
-if numOfArgs == 3:
-    if sys.argv[1] == "-m":    
-        print("There are 3 arguments, p2 = -m")
-    message = sys.argv[2] 
+
 
 print(message)
-
-print("Enter Your Name:")
-x = input()
-print("Hello,", x)
 
 os.system("git status")
 print("Continue? type 'y' for yes, 'n' for no.")
 confirm = input()
-if confirm != "y":
+if confirm == "n":
     print("terminating...")
     quit()
 

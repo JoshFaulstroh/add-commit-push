@@ -23,7 +23,9 @@ if confirm != "y":
     print("terminating...")
     quit()
 
+commitM = '\ngit commit -m "' +  message + '"'
+print(commitM)
+os.system(commitM)
 os.system("git add .")
 os.system("git status")
-os.system("git commit -m 'Default commit'")
 os.system("git push")

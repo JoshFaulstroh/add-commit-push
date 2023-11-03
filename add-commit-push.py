@@ -6,7 +6,7 @@ print("Starting.")
 time.sleep(0.5) 
 numOfArgs = len(sys.argv)
 print("Total Arguments Passed:", numOfArgs)
-message = "Default commit"
+message = input("Please provide commit message:")
 
 
 print(message)

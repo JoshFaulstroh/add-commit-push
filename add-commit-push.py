@@ -15,7 +15,10 @@ if confirm == "n":
     quit()
 
 message = input("Please provide commit message:")
-print("Commit message entered:", message,".", "Is this correct?")
+print("Commit message entered:", message, "Is this correct?", "Y or N")
+messageconfirm = input()
+if messageconfirm == "n":
+    message
 commitM = '\ngit commit -m "' +  message + '"'
 os.system(commitM)
 os.system("git add .")

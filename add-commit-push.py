@@ -2,7 +2,7 @@ import os
 import sys
 import time
 
-print("Starting.")
+print("Starting...")
 time.sleep(0.5) 
 numOfArgs = len(sys.argv)
 print("Total Arguments Passed:", numOfArgs)
@@ -24,3 +24,4 @@ os.system(commitM)
 os.system("git add .")
 os.system("git status")
 os.system("git push")
+print("...Finished")

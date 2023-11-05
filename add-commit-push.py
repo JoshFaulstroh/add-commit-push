@@ -19,12 +19,11 @@ print("Commit message entered:", message, "Is this correct? Y or N")
 messageconfirm = input()
 if messageconfirm == "n":
     correctedMessage = input("please provide commit message:")
-    correctedMessageconfirm = input()
 
 
 commitM = '\ngit commit -m "' +  message + '"'
-os.system(commitM)
-os.system("git add .")
-os.system("git status")
-os.system("git push")
+os.system("\n"+commitM)
+os.system("\ngit add .")
+os.system("\ngit status")
+os.system("\ngit push")
 print("...Finished")

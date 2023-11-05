@@ -19,7 +19,7 @@ print("Commit message entered:", message, "Is this correct? Y or N")
 messageconfirm = input()
 if messageconfirm == "n":
     correctedMessage = input("please provide commit message:")
-correctedMessageconfirm = input()
+    correctedMessageconfirm = input()
 
 
 commitM = '\ngit commit -m "' +  message + '"'

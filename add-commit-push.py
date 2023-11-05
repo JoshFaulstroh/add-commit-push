@@ -24,17 +24,17 @@ if messageconfirm == "n":
 
 
 commitM = '\ngit commit -m "' +  message + '"'
-print("\ngit commit", message)
+print("\ngit commit", message, "\n")
 time.sleep(0.5)
 os.system("\n"+commitM)
-print("\ngit add .")
+print("\ngit add .\n")
 time.sleep(0.5)
 os.system("\ngit add .")
-print("\ngit status")
+print("\ngit status\n")
 time.sleep(0.5)
 os.system("\ngit status")
-print("\ngit push")
+print("\ngit push\n")
 time.sleep(0.5)
 os.system("\ngit push")
-print("\n...Finished")
+print("\n...Finished\n")
 time.sleep(0.5)

@@ -6,6 +6,10 @@ print("\nStarting...")
 time.sleep(0.5) 
 numOfArgs = len(sys.argv)
 print("\nTotal Arguments Passed:", numOfArgs)
+#set up loop: set up variable (force) set to false by default
+#if any command line arguments are '-f', change value of force to true
+#Every confirmation should check force before querstion is asked, if force=true, don't ask questions
+
 
 print("\ngit status\n")
 time.sleep(0.5)
